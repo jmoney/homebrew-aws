@@ -6,7 +6,7 @@ class AwsSsh < Formula
   
     if OS.mac?
       url "https://github.com/jmoney/aws-ssh/releases/download/v0.0.4/aws-ssh.tar.gz"
-      sha256 "efd37decff6a526def8ab3b29d33063b689d06ba22d22a4cba894d4e371383ad"
+      sha256 "13341c9f564598d6241c46e1728d10a61107e6f1bcd028c5eb9e352594f1e591"
     end
   
     def install
