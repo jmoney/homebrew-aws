@@ -2,7 +2,6 @@ class AwsSsh < Formula
     desc "SSH wrapper to specify the right ProxyCommand used by aws ssm session manager"
     homepage "https://www.jmoney.dev"
     version "0.0.4"
-    bottle :unneeded
   
     if OS.mac?
       url "https://github.com/jmoney/aws-ssh/releases/download/v0.0.4/aws-ssh.tar.gz"
