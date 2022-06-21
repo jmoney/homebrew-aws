@@ -3,7 +3,6 @@ class AwsCostMaintenance < Formula
   desc "Collection of scripts that analyze easily correctable items to save money in AWS."
   homepage "https://www.jmoney.dev"
   version "0.1.13"
-  bottle :unneeded
 
   if OS.mac?
     url "https://github.com/jmoney/aws-cost-maintenance/releases/download/v0.1.13/aws-cost-maintenance_0.1.13_darwin_amd64.tar.gz"
