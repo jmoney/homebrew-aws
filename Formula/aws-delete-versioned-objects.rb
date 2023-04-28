@@ -5,21 +5,21 @@
 class AwsDeleteVersionedObjects < Formula
   desc "Deletes version objects from S3 buckets"
   homepage "https://jmoney.dev/aws-delete-versioned-objects"
-  version "0.2"
+  version "0.3"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jmoney/aws-delete-versioned-objects/releases/download/0.2/aws-delete-versioned-objects_0.2_darwin_arm64.tar.gz"
-      sha256 "5666507819b443e7d5757026505cc596572158d46d3d23164046c422d8bc7acb"
+      url "https://github.com/jmoney/aws-delete-versioned-objects/releases/download/0.3/aws-delete-versioned-objects_0.3_darwin_arm64.tar.gz"
+      sha256 "436aa8b29846517b53dae1cd660896980dc8c460761a13b8170070fd02ce48bb"
 
       def install
         bin.install "aws-delete-versioned-objects"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jmoney/aws-delete-versioned-objects/releases/download/0.2/aws-delete-versioned-objects_0.2_darwin_x86_64.tar.gz"
-      sha256 "74e166518e8d8cec29e6ae9131281a6ef653e2c2acf0365200278e19476badb4"
+      url "https://github.com/jmoney/aws-delete-versioned-objects/releases/download/0.3/aws-delete-versioned-objects_0.3_darwin_x86_64.tar.gz"
+      sha256 "d05319239a4e1459f340d994817ca4984f55b8acec572150c6b065de731b5dbf"
 
       def install
         bin.install "aws-delete-versioned-objects"
@@ -29,16 +29,16 @@ class AwsDeleteVersionedObjects < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmoney/aws-delete-versioned-objects/releases/download/0.2/aws-delete-versioned-objects_0.2_linux_arm64.tar.gz"
-      sha256 "9fd10491a81c1912b1142499eb083f1a31a90bf44a0a67fc20f514fd27751f0b"
+      url "https://github.com/jmoney/aws-delete-versioned-objects/releases/download/0.3/aws-delete-versioned-objects_0.3_linux_arm64.tar.gz"
+      sha256 "11d3b9d29c9a56e4c2b0df97fbc40740eaa21775dcc03d243a434cd2e3256995"
 
       def install
         bin.install "aws-delete-versioned-objects"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jmoney/aws-delete-versioned-objects/releases/download/0.2/aws-delete-versioned-objects_0.2_linux_x86_64.tar.gz"
-      sha256 "fa3464e655760d4e8ebb152bdf6181c1f8c8eccd14806522579a7341001b97cd"
+      url "https://github.com/jmoney/aws-delete-versioned-objects/releases/download/0.3/aws-delete-versioned-objects_0.3_linux_x86_64.tar.gz"
+      sha256 "e3755ca419f9c1dd93a91adba221f984550cd16a1f9eca7bbf83db39263f00fa"
 
       def install
         bin.install "aws-delete-versioned-objects"
