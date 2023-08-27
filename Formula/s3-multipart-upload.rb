@@ -5,21 +5,21 @@
 class S3MultipartUpload < Formula
   desc "Multipart uploads files to S3 with checkpointing"
   homepage "https://jmoney.dev/s3-multipart-upload"
-  version "0.1"
+  version "0.2"
   license "Apache 2.0"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/jmoney/s3-multipart-upload/releases/download/v0.1/s3-multipart-upload_0.1_darwin_arm64.tar.gz"
-      sha256 "3ab1748c91ca95d73d0b5355f288544119c1ec490913ce36b89a141f8bb3bc0e"
+      url "https://github.com/jmoney/s3-multipart-upload/releases/download/v0.2/s3-multipart-upload_0.2_darwin_arm64.tar.gz"
+      sha256 "c853352969ce525285e5709a58a9a16bfafe24ef7e8febd6fbe17d54bb92f19f"
 
       def install
         bin.install "s3-multipart-upload"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jmoney/s3-multipart-upload/releases/download/v0.1/s3-multipart-upload_0.1_darwin_amd64.tar.gz"
-      sha256 "9d6e4290bcec6777198c29aeb82e5c839fd712b5dc95c1f3c99988215f7363fb"
+      url "https://github.com/jmoney/s3-multipart-upload/releases/download/v0.2/s3-multipart-upload_0.2_darwin_amd64.tar.gz"
+      sha256 "d22aa986dbcb6b7044dab659c074209652488146c7993cea1c90ed3592cdbc83"
 
       def install
         bin.install "s3-multipart-upload"
@@ -29,16 +29,16 @@ class S3MultipartUpload < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/jmoney/s3-multipart-upload/releases/download/v0.1/s3-multipart-upload_0.1_linux_arm64.tar.gz"
-      sha256 "d8e523beed6b55abb29a44458d9f22d1842dad7096377c0ce8065aa77ec8ac7b"
+      url "https://github.com/jmoney/s3-multipart-upload/releases/download/v0.2/s3-multipart-upload_0.2_linux_arm64.tar.gz"
+      sha256 "c7f9eda9960fa06ff8ecac3feab200afa312926d45d482ae79af3607887c3ec4"
 
       def install
         bin.install "s3-multipart-upload"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/jmoney/s3-multipart-upload/releases/download/v0.1/s3-multipart-upload_0.1_linux_amd64.tar.gz"
-      sha256 "e8826a01ad281f862ec77da7bc535a6a261f8afd2799ef6c8a263f44da16fef3"
+      url "https://github.com/jmoney/s3-multipart-upload/releases/download/v0.2/s3-multipart-upload_0.2_linux_amd64.tar.gz"
+      sha256 "6e3b78e9b2583c3b2f3420d7bf49ddde44f3181482b6312013285e56cf2f846d"
 
       def install
         bin.install "s3-multipart-upload"
